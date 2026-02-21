@@ -2,8 +2,70 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Web Personal</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Mi Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 900px;
+            max-width: 95%;
+            height: 650px;
+            background-color: #2c2c2c;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            overflow-y: auto;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .menu button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .menu button:hover {
+            background-color: #45a049;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .content img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
 
@@ -16,70 +78,44 @@
 
     <div id="inicio" class="content active">
         <h2>Bienvenido</h2>
-        <p>
-            Esta es mi página web personal donde presento información sobre mí
-            y algunos reportajes relacionados con la ética y la tecnología.
-        </p>
+        <p>Selecciona una opción para ver la información.</p>
     </div>
 
     <div id="yo" class="content">
         <h2>Sobre mí</h2>
         <p>
-            Me llamo Juan Santos Burgos, tengo 18 años y estudio un grado superior
-            de Programación de la Producción. Tengo varios hobbies, como ver
-            películas o series, y también disfruto haciendo senderismo y
-            acampada en la montaña.
+            Me llamo Juan Santos Burgos, tengo 18 años y estudio un grado superior de
+            Programación de la Producción. Tengo varios hobbies, como ver películas o
+            series y también disfruto haciendo senderismo y acampada en la montaña.
         </p>
         <p>
-            Soy cinturón negro 1º DAN de Taekwondo ITF y en mi tiempo libre me
-            gusta jugar a videojuegos.
+            Soy cinturón negro 1º DAN de Taekwondo ITF y en mi tiempo libre me gusta
+            jugar a videojuegos.
         </p>
 
-        <h2>Mi foto</h2>
-        <img src="IMG/foto.JPG" alt="Foto de Juan Santos Burgos">
+        <h2>Mi Foto</h2>
+        <img src="IMG/foto.JPG" alt="Foto de Juan">
     </div>
 
     <div id="reportajes" class="content">
-        <h2>Reportaje: Ética y privacidad en la nube</h2>
-        <p>
-            El uso de servicios en la nube y dispositivos inteligentes ha
-            aumentado de forma notable en los últimos años. Empresas como
-            Amazon ofrecen productos que facilitan la vida diaria, pero que
-            también recogen grandes cantidades de datos personales.
-        </p>
+        <h2>Reportajes</h2>
 
-        <p>
-            Estos dispositivos pueden recopilar información básica como nombre,
-            dirección o dirección IP, además de datos más sensibles como
-            grabaciones de voz, hábitos de consumo y preferencias del usuario.
-            Aunque la empresa afirma no vender directamente esta información,
-            se utiliza para sistemas de publicidad y recomendaciones.
-        </p>
+        <h3>Reportaje 1</h3>
+        <p>Contenido del primer reportaje.</p>
 
-        <p>
-            Además, se han documentado diversos problemas relacionados con la
-            privacidad y la seguridad, como la conservación de grabaciones de
-            voz de menores o fallos en la protección de dispositivos
-            conectados. Estos hechos plantean importantes dudas éticas sobre
-            el uso responsable de la información en la nube.
-        </p>
-
-        <p>
-            En conclusión, la computación en la nube ofrece grandes ventajas,
-            pero también exige una gestión ética de los datos personales, basada
-            en la transparencia, la seguridad y el respeto a la privacidad de
-            los usuarios.
-        </p>
+        <h3>Reportaje 2</h3>
+        <p>Contenido del segundo reportaje.</p>
     </div>
 </div>
 
 <script>
-function mostrar(seccion) {
-    const contenidos = document.querySelectorAll('.content');
-    contenidos.forEach(c => c.classList.remove('active'));
-    document.getElementById(seccion).classList.add('active');
-}
+    function mostrar(seccion) {
+        const contenidos = document.querySelectorAll('.content');
+        contenidos.forEach(c => c.classList.remove('active'));
+        document.getElementById(seccion).classList.add('active');
+    }
 </script>
 
 </body>
+</html>
 </html>
