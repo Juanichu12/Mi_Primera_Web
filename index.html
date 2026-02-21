@@ -41,7 +41,6 @@
 
     <div id="reportajes" class="content">
         <h2>Reportaje: Ética y privacidad en la nube</h2>
-
         <p>
             El uso de servicios en la nube y dispositivos inteligentes ha
             aumentado de forma notable en los últimos años. Empresas como
@@ -75,11 +74,11 @@
 </div>
 
 <script>
-    function mostrar(seccion) {
-        const contenidos = document.querySelectorAll('.content');
-        contenidos.forEach(c => c.classList.remove('active'));
-        document.getElementById(seccion).classList.add('active');
-    }
+function mostrar(seccion) {
+    const contenidos = document.querySelectorAll('.content');
+    contenidos.forEach(c => c.classList.remove('active'));
+    document.getElementById(seccion).classList.add('active');
+}
 </script>
 
 </body>
