@@ -2,70 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Web</title>
+    <title>Mi Web Personal</title>
     <link rel="stylesheet" href="css/style.css">
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #1e1e1e;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .container {
-            width: 900px;
-            max-width: 95%;
-            height: 650px;
-            background-color: #2c2c2c;
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
-            overflow-y: auto;
-        }
-
-        .menu {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
-        }
-
-        .menu button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            border: none;
-            border-radius: 8px;
-            color: white;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .menu button:hover {
-            background-color: #45a049;
-        }
-
-        .content {
-            display: none;
-        }
-
-        .content.active {
-            display: block;
-        }
-
-        h2 {
-            margin-top: 0;
-        }
-
-        .content img {
-            display: block;
-            margin: 20px auto;
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-    </style>
 </head>
 <body>
 
@@ -78,37 +16,61 @@
 
     <div id="inicio" class="content active">
         <h2>Bienvenido</h2>
-        <p>Selecciona una opción para ver la información.</p>
+        <p>
+            Esta es mi página web personal donde presento información sobre mí
+            y algunos reportajes relacionados con la ética y la tecnología.
+        </p>
     </div>
 
     <div id="yo" class="content">
         <h2>Sobre mí</h2>
         <p>
-            Me llamo Juan Santos Burgos, tengo 18 años y estudio un grado superior de
-            Programación de la Producción. Tengo varios hobbies, como ver películas o
-            series y también disfruto haciendo senderismo y acampada en la montaña.
+            Me llamo Juan Santos Burgos, tengo 18 años y estudio un grado superior
+            de Programación de la Producción. Tengo varios hobbies, como ver
+            películas o series, y también disfruto haciendo senderismo y
+            acampada en la montaña.
         </p>
         <p>
-            Soy cinturón negro 1º DAN de Taekwondo ITF y en mi tiempo libre me gusta
-            jugar a videojuegos.
+            Soy cinturón negro 1º DAN de Taekwondo ITF y en mi tiempo libre me
+            gusta jugar a videojuegos.
         </p>
 
-        <h2>Mi Foto</h2>
-        <img src="IMG/foto.JPG" alt="Foto de Juan">
+        <h2>Mi foto</h2>
+        <img src="IMG/foto.JPG" alt="Foto de Juan Santos Burgos">
     </div>
 
     <div id="reportajes" class="content">
-        <h2>Reportajes</h2>
+        <h2>Reportaje: Ética y privacidad en la nube</h2>
 
-        <h3>Reportaje 1</h3>
-        <p>El uso de servicios en la nube y dispositivos inteligentes ha crecido rápidamente en los últimos años. Un ejemplo claro son los controles por voz de Amazon, analizados por la Mozilla Foundation, que ponen sobre la mesa importantes cuestiones éticas relacionadas con la privacidad de los datos.</p> 
+        <p>
+            El uso de servicios en la nube y dispositivos inteligentes ha
+            aumentado de forma notable en los últimos años. Empresas como
+            Amazon ofrecen productos que facilitan la vida diaria, pero que
+            también recogen grandes cantidades de datos personales.
+        </p>
 
-<p>Según este análisis, Amazon recopila una gran cantidad de información personal a través de sus dispositivos. Entre estos datos se incluyen información básica como nombre, dirección o IP, pero también datos más sensibles como grabaciones de voz, hábitos de consumo, horarios de uso y preferencias personales. Incluso se pueden inferir características como la edad o el género del usuario a partir de su comportamiento.</p>
+        <p>
+            Estos dispositivos pueden recopilar información básica como nombre,
+            dirección o dirección IP, además de datos más sensibles como
+            grabaciones de voz, hábitos de consumo y preferencias del usuario.
+            Aunque la empresa afirma no vender directamente esta información,
+            se utiliza para sistemas de publicidad y recomendaciones.
+        </p>
 
-<p></p>Aunque Amazon afirma que no vende directamente los datos personales a terceros, esta información se utiliza para alimentar sus sistemas de publicidad y recomendación. Desde un punto de vista ético, esto plantea dudas sobre hasta qué punto los usuarios son realmente conscientes de cómo se usan sus datos y si existe un consentimiento plenamente informado.</p>
+        <p>
+            Además, se han documentado diversos problemas relacionados con la
+            privacidad y la seguridad, como la conservación de grabaciones de
+            voz de menores o fallos en la protección de dispositivos
+            conectados. Estos hechos plantean importantes dudas éticas sobre
+            el uso responsable de la información en la nube.
+        </p>
 
-        <h3>Reportaje 2</h3>
-        <p>Contenido del segundo reportaje.</p>
+        <p>
+            En conclusión, la computación en la nube ofrece grandes ventajas,
+            pero también exige una gestión ética de los datos personales, basada
+            en la transparencia, la seguridad y el respeto a la privacidad de
+            los usuarios.
+        </p>
     </div>
 </div>
 
@@ -120,7 +82,5 @@
     }
 </script>
 
-</body>
-</html>
 </body>
 </html>
