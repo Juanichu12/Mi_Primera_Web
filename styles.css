@@ -17,8 +17,8 @@ body {
     border-radius: 20px;
     padding: 25px;
     box-shadow: 0 0 30px rgba(0,0,0,0.7);
-    overflow-y: auto; /* Scroll interno */
-    border: 2px solid #4CAF50; /* borde estilo ventana */
+    overflow-y: auto;  /* Scroll si hay mucho contenido */
+    border: 2px solid #4CAF50;  /* Estilo ventana */
 }
 
 .menu {
